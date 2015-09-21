@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+input {
+    border: 0;
+    background-color: transparent;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+}
+
+.tab-list {
+    width: 500px;
+    max-height: 420px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+
+.tab-list.no-results {
+    margin-top: 0;
+}
+
+.tab {
+    padding: 10px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.source {
+    display: none;
+}
+
+.tab .icon {
+    float: left;
+    width: 16px;
+    height: 40px;
+    margin-right: 12px;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tab .title {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.tab .url {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0,0,0,0.3);
+}
+
+.tab .status-icon {
+    display: none;
+    float: right;
+    width: 28px;
+    height: 40px;
+    margin-left: 12px;
+}
+
+.tab.incognito .status-icon {
+    display: block;
+    background-image: url(/images/incognito.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tab-list .selected {
+    color: #fff;
+    background-color: #338fed;
+}
+
+.tab-list .selected .url {
+    color: rgba(255, 255, 255, 0.5);
+}
